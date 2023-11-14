@@ -129,3 +129,63 @@ section.about .socials a{
 section.about .socials a:hover{
     background: var(--primary);
 }
+
+/****services page****/
+section.services{
+    background: rgb(17, 17, 17);
+}
+.services-head{
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1rem;
+    color: var(--primary);
+}
+.services-head + p{
+ color: var(--white);
+ font-family: 'Lato', sans-serif;
+ margin-bottom: 6rem;
+ text-align: center;
+font-weight: 400;
+}
+.card img{
+    width: 50px;
+    background: white;
+}
+section.services .card-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+section.services .card-grid .card{
+    background: var(--white);
+    padding: 3rem 2rem;
+    position: relative;
+    text-align: center;
+    transition: all .2s ease;
+}
+section.services .card-grid .card img{
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section.services .card-grid .card h2{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+section.services .card-grid .card p{
+    font-family: 'Lato', sans-serif;
+    color: var(--secondary);
+    line-height: 1.6;
+}
+section.services .card-grid .card:hover{
+    background: var(--primary);
+}
+section.services .card-grid .card h2:hover{
+    color: var(--white);
+}
+section.services .card-grid .card p:hover{
+    color: var(--white);
+}

@@ -72,7 +72,7 @@ body{
 .nav-items {
     display: flex;
     opacity:  1;
-    transition: opacity 1s ease;
+    transition: opacity 0.5s ease;
 }
 
 header nav .right {

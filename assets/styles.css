@@ -32,9 +32,17 @@ header nav .left a:hover{
 header nav{
     padding: 2rem 0;
 }
- header nav .logo{
-    margin-right: 3rem;
- }
+
+.nav-items {
+    height: 100px;
+    margin-left: 5%;
+    /* border: 1px solid red; */
+}
+
+.nav-items .left {
+    margin-left: 8%;
+}
+
 .logo img{
     box-sizing: border-box;
     margin: 0;
@@ -57,18 +65,51 @@ body{
     max-width: 1152px;
     padding: 0 15px;
     margin: 0 auto;
+    transition: height 0.5s ease;
+
 }
+
+.nav-items {
+    display: flex;
+    opacity:  1;
+    transition: opacity 1s ease;
+}
+
+header nav .right {
+    align-self: self-end;
+    
+}
+
+.menu-icon {
+    display: none;
+    position: absolute;
+    right: 45px;
+    top: 50px;
+    font-size: larger;
+    border: 3px solid var(--primary);
+    border-radius: 4px; 
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    margin: 0 auto;
+}
+
 .hero{
     padding-top: 2rem;
     padding-bottom: 3rem;
 }
 .hero .left img{
-    width: 400px;
-    margin-left: 1em;
+    max-width: 400px;
+    margin-left: 2em;
+    margin-right: 4rem;
+    align-items: center;
 }
 .hero .right{
-    margin-top: -1rem;
-    margin-left: -20rem;
+    /* margin-top: -1rem; */
+    margin-right: 4rem;
 }
 .hero .right h6{
     font-size: 1.6rem;
@@ -81,6 +122,7 @@ body{
     line-height: 1.2;
     margin-bottom: 2rem;
 }
+
 .hero .right h1 span{
     color: var(--primary);
 }
@@ -88,6 +130,130 @@ body{
     line-height: 1.9;
     margin-bottom: 2rem;
 }
+
+/** adjustments for MD screens **/
+@media (max-width: 828px) {
+    .hero .right h6 {
+        font-size: 1.2rem;
+    }
+
+    .hero .right h1 {
+        font-size: 3.2rem;
+    }
+}
+
+/** adjustments for SM screens **/
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero .right {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .hero .left img {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 318px;
+    }
+
+    .hero .right p {
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .hero .left {
+        margin-bottom: 2rem;
+    }
+    
+
+    /*** navbar ****/
+    .menu-icon {
+        display: flex;
+
+    }
+    
+    header .container nav {
+        flex-direction: column;
+        align-items: start;
+        height: 350px;
+    }
+
+    .container  {
+        height: 150px;
+    }
+
+    .nav-items {
+        /* border: 1px solid red; */
+
+        width: 100%;
+        margin-left:  0;
+        display: none;
+        opacity: 0;
+        
+        
+    }
+
+    .nav-items .left {
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .nav-items .left a {
+        margin-bottom: 1rem;
+    }
+    header nav .logo {
+        margin-right: 0px;
+        margin-bottom: 1rem;
+    }
+
+    .logo img {
+        width: 130px;
+        height: 80px;
+    }
+
+    
+}
+
+/** adjustements for XS screens**/
+@media (max-width: 349px) {
+    .container {
+        height: 360px;
+    }
+    .nav-items {
+        height: inherit;
+        flex-direction: column;
+        align-items: flex-start;
+     }
+
+     header nav .right {
+        align-self: normal;
+        margin-left: 0;
+        margin-top: 1.3rem;
+     }
+     .hero .left img {
+        max-width: 220px;
+     }
+
+     .hero .right h1 {
+        font-size: 2.8rem;
+     }
+}
+
+.show {
+    display: flex;
+    opacity: 1;
+}
+
+.hide {
+    display: none;
+    opacity: 0;
+}   
+
 
 /***** about page *****/
 section{

@@ -95,6 +95,7 @@ header nav .right {
 
 .menu-icon span {
     margin: 0 auto;
+    color: var(--white);
 }
 
 .hero{
@@ -103,14 +104,10 @@ header nav .right {
 }
 .hero .left img{
     max-width: 400px;
-    margin-left: 2em;
     margin-right: 4rem;
     align-items: center;
 }
-.hero .right{
-    /* margin-top: -1rem; */
-    margin-right: 4rem;
-}
+
 .hero .right h6{
     font-size: 1.6rem;
     color: var(--primary);
@@ -216,6 +213,10 @@ header nav .right {
         height: 80px;
     }
 
+    section.services .card-grid {
+        display: flex;
+        flex-direction: column;
+    }
     
 }
 
@@ -256,9 +257,7 @@ header nav .right {
 
 
 /***** about page *****/
-section{
-    padding: 4rem;
-}
+
 section.about h1{
     margin-bottom: 1rem;
     font-size: 1.6rem;
@@ -278,19 +277,18 @@ section.about p{
     line-height: 1.9rem;
     margin-bottom: 2rem;
 }
-section.about socials{
-    display: flex;
-    margin-bottom: -4rem;
+section.about .socials{
+    margin-bottom: 2rem;
+
+    /* border: 1px solid red; */
 }
 section.about .socials a{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35px;
     margin-right: 0.8rem;
     border-radius: 50%;
     margin-left: 1rem;
-    margin-bottom: 1rem;
 }
 section.about .socials a:hover{
     background: var(--primary);

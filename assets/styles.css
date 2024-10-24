@@ -29,6 +29,12 @@ header nav .left a{
 header nav .left a:hover{
     color: var(--primary);
 }
+
+.nav-link.active{
+    color: var(--primary);
+    font-weight: bold;
+}
+
 header nav{
     padding: 2rem 0;
 }

@@ -15,6 +15,33 @@ menuIcon.addEventListener('click', () => {
 
 });
 
+// apply styles for active nav-link
+const links =  document.querySelectorAll('.nav-link');
+links.forEach(link => {
+  link.addEventListener('click', function() {
+    //storing the clicked link
+    localStorage.setItem('activeLink', this.getAttribute('href'));
+
+    setActiveLink();
+  });  
+});
+
+function setActiveLink() {
+  // remove active class from all links and add it only on the active link
+  links.forEach(link => link.classList.remove('active'));
+
+  const activeLink = localStorage.getItem('activeLink');
+  if (activeLink) {
+    const link = document.querySelector(`a[href="${activeLink}"]`);
+    if (link) {
+      link.classList.add('active');
+    }
+  }
+}
+
+// call on page reload
+setActiveLink();
+
 // update the container's height back to normal and displays content for large screens
 function updateCtn() {
   const ctn = document.querySelector('header .container');

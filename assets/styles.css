@@ -384,3 +384,39 @@ section.services .card-ctn .card h2:hover{
 section.services .card-ctn .card p:hover{
     color: var(--white);
 }
+
+.blog-ctn{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 2rem;
+    line-height: 28px;
+    font-size: 18px;
+    /* border: 2px solid green; */
+}
+
+.blog h1, .blog h2, .blog p, .blog div {
+    margin-bottom: 2rem;
+    
+}
+
+.blog h2 {
+    align-self: self-start;
+}
+.blog p {
+}
+.blog .cover-img {
+    max-width: 720px;
+    max-height: 600px;
+
+}
+
+.blog .cover-img img {
+    width: 100%;
+    max-width: 100%;
+    height: 339px;
+}

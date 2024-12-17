@@ -119,6 +119,7 @@ header nav .right {
     font-size: 1.6rem;
     color: var(--primary);
     margin-bottom: 0.5rem;
+    white-space: nowrap;
 }
 .hero .right h1{
     font-size: 4rem;
@@ -271,9 +272,9 @@ footer {
 
 /** adjustements for XS screens**/
 @media (max-width: 349px) {
-    .container {
+    /* .container {
         height: 360px;
-    }
+    } */
     .nav-items {
         height: inherit;
         flex-direction: column;

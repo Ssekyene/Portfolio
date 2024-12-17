@@ -135,6 +135,18 @@ header nav .right {
     margin-bottom: 2rem;
 }
 
+footer {
+    margin-top: 1.3rem;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+
+}
+ footer div {
+    padding-bottom: 1rem;
+    opacity: 0.7;
+ }
+
 /** adjustments for MD screens **/
 @media (max-width: 828px) {
     .hero .right h6 {
@@ -194,9 +206,9 @@ header nav .right {
         height: 350px;
     }
 
-    .container  {
+    /* .container  {
         height: 150px;
-    }
+    } */
 
     .nav-items {
         /* border: 1px solid red; */

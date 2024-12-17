@@ -476,3 +476,60 @@ section.services .card-ctn .card p:hover{
     display: block;
 
 }
+
+/* Contact Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F5F5F4;
+    padding: 20px;
+    border-radius: 8px;
+    width: 16rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 20px;
+    color: var(--secondary);
+  }
+  
+  .contact-link {
+    display: block;
+    margin: 10px 0;
+    color: #008cba;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  .contact-link:hover {
+    text-decoration: underline;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: #555;
+  }

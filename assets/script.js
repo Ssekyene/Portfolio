@@ -62,3 +62,25 @@ function updateCtn() {
 updateCtn();
 
 window.addEventListener('resize', updateCtn);
+
+/*** modal functionality ***/
+const contactBtn = document.getElementById('contact-btn');
+const contactModal = document.getElementById('contact-modal');
+const closeBtn = document.querySelector('.close-btn');
+
+// Open the modal
+contactBtn.addEventListener('click', () => {
+  contactModal.style.display = 'block';
+});
+
+// Close the modal when the close button is clicked
+closeBtn.addEventListener('click', () => {
+  contactModal.style.display = 'none';
+});
+
+// Close the modal when clicking outside the modal content
+window.addEventListener('click', (event) => {
+  if (event.target === contactModal) {
+    contactModal.style.display = 'none';
+  }
+});

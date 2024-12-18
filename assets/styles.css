@@ -487,22 +487,38 @@ section.services .card-ctn .card p:hover{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     z-index: 1000;
+    opacity: 0;
+    pointer-events: none; /* Disable interactions when hidden */
+    transition: opacity 0.3s ease-in-out;  /* Smooth fade effect */
   }
   
+  /* Modal (Visible State) */
+  .modal.show {
+    display: block; /* Visible modal */
+    opacity: 1; /* Fully opaque */
+    pointer-events: auto; /* Enable interactions */
+  }
+
   .modal-content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: #F5F5F4;
     padding: 20px;
     border-radius: 8px;
     width: 16rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-
+    transform: translate(-50%, -50%) scale(0.9); /* Slightly smaller initially */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth scaling */
   }
   
+  /* Modal Content (Visible State) */
+  .modal.show .modal-content {
+    transform: translate(-50%, -50%) scale(1); /* Grows to normal size */
+    opacity: 1;
+  }
+
   .modal-content h2 {
     margin-bottom: 20px;
     color: var(--secondary);

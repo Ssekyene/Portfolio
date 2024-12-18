@@ -70,17 +70,20 @@ const closeBtn = document.querySelector('.close-btn');
 
 // Open the modal
 contactBtn.addEventListener('click', () => {
-  contactModal.style.display = 'block';
+  // contactModal.style.display = 'block';
+  contactModal.classList.add('show');
 });
 
 // Close the modal when the close button is clicked
 closeBtn.addEventListener('click', () => {
-  contactModal.style.display = 'none';
+  // contactModal.style.display = 'none';
+  contactModal.classList.remove('show');
 });
 
 // Close the modal when clicking outside the modal content
 window.addEventListener('click', (event) => {
   if (event.target === contactModal) {
-    contactModal.style.display = 'none';
+    // contactModal.style.display = 'none';
+    contactModal.classList.remove('show');
   }
 });

@@ -109,6 +109,14 @@ header nav .right {
     padding-top: 2rem;
     padding-bottom: 3rem;
 }
+.hero-link {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.hero-link:hover {
+    text-decoration: underline;
+}
 .hero .left img{
     max-width: 400px;
     margin-right: 4rem;

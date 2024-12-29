@@ -16,7 +16,7 @@ menuIcon.addEventListener('click', () => {
 });
 
 /****** apply styles for active nav-link ******/
-const links =  document.querySelectorAll('.nav-link');
+const links =  document.querySelectorAll('.nav-link, .hero-link');
 links.forEach(link => {
   link.addEventListener('click', function() {
     //storing the clicked link

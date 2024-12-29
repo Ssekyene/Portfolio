@@ -455,6 +455,7 @@ section.services .card-ctn .card p:hover{
     font-size: 42px;
     font-weight: 700;
     line-height: 52px;
+    text-align: center;
 }
 .blog h1, .blog h2 {
     font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
